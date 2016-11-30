@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <title>Add a car</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="addCar.js"></script>
+</head>
+<body>
+	<a href="index.html"><button class="primary-button" style="color:black; margin-top:5px;margin-left:5px;">Go Back</button></a>
+	<div class="container">
+			<div class="row">
+		    	<h3 style="text-align:center;">Add a car</h3>
+			</div>
+			<div class="row">
+			    <label for="model">Model </label>
+			    <input id="model" class="u-full-width">
+			</div>
+			<div class="row"style="padding-top:30px;padding-bottom:30px;">
+				<div class="five columns">
+			    	<label for="horsePower"> Horsepower </label>
+			    	<input id="horsePower" class="u-full-width">
+			    </div>
+			    <div class="five columns" style="float:right;">
+				    <label for="yearOfManufacture">Year</label>
+				    <input id="yearOfManufacture" class="u-full-width">
+				</div>
+			</div>
+			<div class="row">
+			    <button id="addCarButton" class="button-primary" onclick="addCar();" style ="display: block; margin: 0 auto;">Add car</button>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="jquery.twbsPagination.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<title>Auto-Data demo</title>
+	<style>
+	#ui-id-1 {
+		background-color:white;
+		width:30px;
+		list-style:none;
+		cursor: default;
+	}
+	#ui-id-1 li:hover {
+		background-color:#C7C7C7;
+	}
+	</style>
+</head>
+<body>
+    <a href="addCar.html"><button class="primary-button" style="color:black;margin-top:5px;margin-left:5px;">Add a car</button></a>
+    <div class="container">
+		<div class="ui-widget">
+			<h3 style="display: block;text-align: center;">Filters:</h3>
+		    <div class="row">
+	  			<label for="modelFilter">Model </label>
+	  			<input id="modelFilter" class="u-full-width">
+		    </div>
+		    <div class="row" style="padding-top:30px;padding-bottom:30px;">
+		    	<div class = "five columns">
+			        <label for="horsePowerFilter">Horsepower </label>
+			        <input id="horsePowerFilter" class="u-full-width">
+			    </div>
+			    <div class = "five columns" style="float:right;">
+			        <label for="yearOfManufactureFilter">Year</label>
+			        <input id="yearOfManufactureFilter" class="u-full-width">
+			    </div>
+		 	</div>
+		 	<div class="row" style="margin-bottom: 10px"><button id="filterButton" class="button-primary" style ="display: block;margin: 0 auto;"type="submit">Filter</button></div> 
+		</div>
+		<div class="row">
+			<div class="u-full-width" style="text-align:center;">
+				<ul id="pagination-list" class="pagination">
+				</ul>
+			</div>
+		</div>
+	    <div class="row">
+				<table id="carsTable" class="u-full-width">
+					<thead>
+						<tr>
+							<th>Model</th>
+							<th>Horsepower</th>
+							<th>Year of manufacture</th>
+						</tr>
+					</thead>
+					<tbody id="carsTableBody">
+					</tbody>
+				</table>
+		</div>
+	</div>
+</body>
+</html>
